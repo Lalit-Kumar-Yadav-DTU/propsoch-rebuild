@@ -99,20 +99,3 @@ npm run dev
 npm run build
 
 ```
-
-
-
----
-
-## 🎓 Evaluation Checklist
-
-* [x] Lighthouse Audit Scores documented.
-* [x] 5 UX/UI issues identified and fixed.
-* [x] Redesigned Hero section with City Selector.
-* [x] 2+ additional sections from original site (Stats & Services).
-* [x] Responsive design (Mobile + Desktop).
-* [x] Optimized images using `next/image`.
-* [x] Deployed on Vercel.
-
----
-
