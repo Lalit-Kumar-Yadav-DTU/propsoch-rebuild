@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Propsoch Landing Page Rebuild
 
-## Getting Started
+A high-performance, responsive landing page rebuild using Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Live Demo
+**Link:** [Paste your Vercel Link here after Step 3]
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Deployment:** Vercel
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📊 Part 1: Analysis of Original Site
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Lighthouse Scores (Desktop)
+- **Performance:** 99
+- **Accessibility:** 71
+- **Best Practices:** 77
+- **SEO:** 100
 
-## Learn More
+### Identified UX/UI Issues
+1. **Accessibility (ARIA Labels):** Many icon-only buttons lacked labels for screen readers.
+2. **Color Contrast:** The orange/white button combinations failed WCAG contrast checks.
+3. **Touch Targets:** Mobile navigation icons were too close together, leading to accidental clicks.
+4. **Image Ratios:** Hero images were distorted due to aspect-ratio mismatches.
+5. **Performance (Third-Party):** Heavy JS from tracking pixels delayed interactivity.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ✨ Improvements Made
+- **Optimized Video:** Implemented a "Lazy-Loading Modal" for the YouTube video to keep Lighthouse scores high.
+- **Enhanced UI:** Introduced a modern "City Toggle" and increased whitespace (padding) for better readability.
+- **Image Optimization:** Used `next/image` with proper `priority` loading for the Largest Contentful Paint (LCP) element.
+- **Mobile First:** Rebuilt the layout from scratch using a mobile-first Tailwind grid system.
