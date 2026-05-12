@@ -6,7 +6,6 @@ A high-performance, accessible, and responsive landing page rebuild of [Propsoch
 
 **Live Demo:** [https://propsoch-rebuild.vercel.app/](https://propsoch-rebuild.vercel.app/)
 
-**Video Walkthrough:** 
 
 ---
 
