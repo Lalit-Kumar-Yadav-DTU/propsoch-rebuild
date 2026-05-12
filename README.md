@@ -115,7 +115,7 @@ npm run dev
 
 | Original Site Audit | My Rebuild Audit |
 | --- | --- |
-| <img width="1536" height="776" alt="image" src="https://github.com/user-attachments/assets/a244ff00-30d6-4e7e-ad02-e4760ce080e9" />
+| <img width="1523" height="775" alt="Screenshot 2026-05-12 143800" src="https://github.com/user-attachments/assets/1ca2003e-3c7f-43e2-b844-17d7f0b8d90b" />
  | <img width="1536" height="773" alt="image" src="https://github.com/user-attachments/assets/6503a195-2ef0-4df7-88d8-cd69e6d4748c" />
  |
 
