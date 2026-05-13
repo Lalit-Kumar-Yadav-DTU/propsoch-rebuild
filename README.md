@@ -1,3 +1,4 @@
+---
 
 # 🚀 Propsoch Rebuild: Performance & UX Optimization
 
@@ -63,6 +64,23 @@ A comprehensive audit was conducted using Google Lighthouse to identify performa
 
 ---
 
+## 📁 Project Structure
+
+```bash
+propsoch-rebuild/
+├── src/
+│   ├── app/            # Next.js App Router (Layout \u0026 Page)
+│   ├── components/     # Specialized UI (TechnicalAudit, Journey, Ancillary, etc.)
+│   └── constants/      # Mapped data for grids and tables
+├── public/             # Optimized SVG and static assets
+├── next.config.ts      # Domain whitelisting for external assets
+└── README.md           # Documentation and Audit Analysis
+
+```
+
+---
+
+
 ## 📸 Screenshots
 
 ### **Original vs. Rebuild Comparison**
@@ -72,7 +90,7 @@ Original Site Audit
 
 My Rebuild Audit 
  <img width="1536" height="773" alt="image" src="https://github.com/user-attachments/assets/6503a195-2ef0-4df7-88d8-cd69e6d4748c" />
- 
+
 ---
 
 ## 🛠️ Installation & Setup
