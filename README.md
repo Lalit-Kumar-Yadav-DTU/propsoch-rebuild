@@ -39,8 +39,8 @@ A comprehensive audit was conducted using Google Lighthouse to identify performa
 
 | Category | Original Site | My Rebuild | Improvement |
 | --- | --- | --- | --- |
-| **Performance** | 99 | **98** | -1 (Balanced for higher asset density) |
-| **Accessibility** | 71 | **95** | **+24** 🚀 |
+| **Performance** | 99 | **100** | +1 (Balanced for higher asset density) |
+| **Accessibility** | 71 | **94** | **+23** 🚀 |
 | **Best Practices** | 77 | **100** | **+23** 🚀 |
 | **SEO** | 100 | **100** | — |
 
@@ -89,7 +89,8 @@ Original Site Audit
 <img width="1523" height="775" alt="Screenshot 2026-05-12 143800" src="https://github.com/user-attachments/assets/1ca2003e-3c7f-43e2-b844-17d7f0b8d90b" />
 
 My Rebuild Audit 
- <img width="1536" height="773" alt="image" src="https://github.com/user-attachments/assets/6503a195-2ef0-4df7-88d8-cd69e6d4748c" />
+ <img width="1536" height="763" alt="Screenshot 2026-05-13 133154" src="https://github.com/user-attachments/assets/864b7ddf-800f-42bc-8a5f-d6ffb6ed6bee" />
+
 
 ---
 
