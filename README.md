@@ -4,8 +4,9 @@
 
 A high-performance, accessible, and information-rich landing page rebuild of [Propsoch](https://www.propsoch.com/). This project was developed as a frontend engineering assessment to demonstrate proficiency in building data-dense, production-grade interfaces using **Next.js 14**, **TypeScript**, and **Tailwind CSS**.
 
-**Live Demo:** [https://propsoch-rebuild.vercel.app/](https://propsoch-rebuild.vercel.app/)
-
+* **🌐 Live Demo:** [https://propsoch-rebuild.vercel.app/](https://propsoch-rebuild.vercel.app/)
+* **📄 Technical Analysis (PDF):** [View Documentation](https://drive.google.com/file/d/1UIe7-Puo26lwdbOPCVBoOyPeqGjdwS2Q/view?usp=sharing)
+* **🎥 Walkthrough Video:** [Watch Explanation Recording](https://drive.google.com/file/d/1Or7G2lRTPfGPQX1QOGM22BQ6B0MU8q2Z/view?usp=sharing)
 ---
 
 ## 📊 Part 1: Analysis of Original Site
