@@ -1,17 +1,15 @@
----
 
 # 🚀 Propsoch Rebuild: Performance & UX Optimization
 
-A high-performance, accessible, and responsive landing page rebuild of [Propsoch](https://www.propsoch.com/). This project was developed as part of a frontend engineering assessment to demonstrate proficiency in **Next.js**, **TypeScript**, and **Tailwind CSS**.
+A high-performance, accessible, and information-rich landing page rebuild of [Propsoch](https://www.propsoch.com/). This project was developed as a frontend engineering assessment to demonstrate proficiency in building data-dense, production-grade interfaces using **Next.js 14**, **TypeScript**, and **Tailwind CSS**.
 
 **Live Demo:** [https://propsoch-rebuild.vercel.app/](https://propsoch-rebuild.vercel.app/)
-
 
 ---
 
 ## 📊 Part 1: Analysis of Original Site
 
-I conducted a comprehensive audit using Google Lighthouse to identify bottlenecks in the current user experience.
+A comprehensive audit was conducted using Google Lighthouse to identify performance bottlenecks and accessibility gaps in the original platform.
 
 ### **1.1 Lighthouse Audit Results (Original)**
 
@@ -26,58 +24,55 @@ I conducted a comprehensive audit using Google Lighthouse to identify bottleneck
 
 | # | Issue Category | Observed Problem | Solution (Implemented in Rebuild) |
 | --- | --- | --- | --- |
-| 1 | **Accessibility** | **Missing Accessible Names:** Interactive icons (Search, Share) lacked ARIA labels, making them unusable for screen readers. | Added descriptive `aria-label` tags to all icon-based buttons and interactive elements. |
-| 2 | **Visual Design** | **Low Color Contrast:** The white text on the primary orange branding failed WCAG AA contrast standards. | Darkened the brand orange slightly and increased font-weight to ensure accessibility for visually impaired users. |
-| 3 | **Mobile UX** | **Tight Touch Targets:** Navigation icons in the mobile bar were too close together, leading to high mis-click rates. | Rebuilt the navigation with increased padding (min-height 44px) and improved spatial distribution. |
-| 4 | **Performance** | **Heavy Initial Load:** The YouTube video on the hero section loaded the full heavy player immediately on page load. | Implemented a **Lazy-Loading Modal**. The video player only initializes upon a user click, significantly reducing Total Blocking Time. |
-| 5 | **UI Hierarchy** | **Weak Visual Anchor:** The Hero section lacked a clear "Primary" vs "Secondary" button hierarchy, causing user confusion. | Redesigned CTA buttons with distinct **Solid vs. Ghost** styles to clearly guide the user's primary journey. |
+| 1 | **Accessibility** | **Missing ARIA Names:** Interactive icons (Search, Share) lacked accessible labels, making them unusable for screen readers. | Added descriptive `aria-label` tags and semantic HTML to all interactive elements. |
+| 2 | **Visual Design** | **Color Contrast Failure:** White text on the brand orange failed WCAG AA standards for legibility. | Refined the brand palette with higher-contrast shades to ensure accessibility for all users. |
+| 3 | **Performance** | **Main-Thread Blocking:** The YouTube Hero embed initialized the full player on page load, increasing Total Blocking Time (TBT). | Implemented a **Lazy-Loading Video Modal**. Assets only load upon user interaction, preserving 98+ Performance. |
+| 4 | **UX Depth** | **Information Density:** The original site felt significantly more "heavy" and authoritative due to the number of research sections. | **Content Expansion:** Added a 50-point Technical Audit and 6-Stage Journey to match the original's research-first feel. |
+| 5 | **UI Hierarchy** | **CTA Clarity:** The Hero section lacked distinct visual weights for primary vs. secondary actions. | Redesigned CTAs with clear **Solid vs. Ghost** styles to improve conversion paths. |
 
 ---
 
 ## ✨ Part 2: The Build (Improvements)
 
-### **Lighthouse Comparison (Desktop)**
+### **Lighthouse Comparison (Desktop Rebuild)**
 
 | Category | Original Site | My Rebuild | Improvement |
 | --- | --- | --- | --- |
-| **Performance** | 99 | **98** | -1 (Heavier UI assets) |
+| **Performance** | 99 | **98** | -1 (Balanced for higher asset density) |
 | **Accessibility** | 71 | **95** | **+24** 🚀 |
 | **Best Practices** | 77 | **100** | **+23** 🚀 |
 | **SEO** | 100 | **100** | — |
 
 ### **Key Features Added**
 
-* **Redesigned Hero Section:** Features a modern layout with a functional **City Selector** (Bangalore/Mumbai) and a high-fidelity video trigger.
-* **Interactive Video Modal:** A performance-first solution that plays the founder's video without slowing down the initial page load.
-* **Impact Stats Section:** Rebuilt the "Advice Hours" and "Sq. Ft. Analyzed" sections with a clean, responsive grid.
-* **Expertise Cards:** A 4-column service grid with hover animations to improve user engagement.
+* **6-Stage Service Journey:** Rebuilt the full end-to-end homebuying roadmap (Discovery to Closing) with a responsive grid layout.
+* **50-Point Technical Audit:** Implemented an interactive accordion section detailing floor plan analysis, ventilation, and investment potential.
+* **Ancillary Service Grid:** Added a comprehensive ecosystem section covering Home Loans, Legal, and Interior Design.
+* **Next-Gen Media Handling:** Leveraged `next/image` for automatic WebP conversion and `lucide-react` for scalable, accessible iconography.
+* **Dynamic City Selector:** A functional UI element for Bangalore/Mumbai localization within the Hero section.
 
 ---
 
 ## 🛠️ Tech Stack & Decisions
 
-* **Framework:** **Next.js 14 (App Router)** - Used for its superior routing and built-in optimization tools.
-* **Language:** **TypeScript** - Implemented for type-safety and better developer experience.
-* **Styling:** **Tailwind CSS** - Used for rapid UI building and maintaining a small CSS bundle size.
-* **Optimization:** **Next/Image** - All images use the next/image component for automatic WebP conversion and lazy loading.
-* **Deployment:** **Vercel** - Chosen for seamless integration with the Next.js ecosystem.
+* **Framework:** **Next.js 14 (App Router)** - Chosen for server-side optimization and efficient routing.
+* **Language:** **TypeScript** - Enforced strict type-safety for a robust, bug-free codebase.
+* **Styling:** **Tailwind CSS** - Used a mobile-first approach to ensure perfect responsiveness.
+* **Icons:** **Lucide React** - Clean, lightweight, and accessible icon set.
+* **Deployment:** **Vercel** - Integrated for automated CI/CD and edge caching.
 
 ---
 
-## 📁 Project Structure
+## 📸 Screenshots
 
-```bash
-propsoch-rebuild/
-├── src/
-│   ├── app/            # Next.js App Router (Pages & Layout)
-│   ├── components/     # Reusable UI (Hero, Stats, Services, Navbar)
-│   ├── constants/      # Static data and text content
-├── public/             # Optimized image assets
-├── next.config.ts      # Image domain whitelist configuration
-└── README.md           # Analysis and Documentation
+### **Original vs. Rebuild Comparison**
 
-```
+Original Site Audit 
+<img width="1523" height="775" alt="Screenshot 2026-05-12 143800" src="https://github.com/user-attachments/assets/1ca2003e-3c7f-43e2-b844-17d7f0b8d90b" />
 
+My Rebuild Audit 
+ <img width="1536" height="773" alt="image" src="https://github.com/user-attachments/assets/6503a195-2ef0-4df7-88d8-cd69e6d4748c" />
+ 
 ---
 
 ## 🛠️ Installation & Setup
@@ -106,13 +101,6 @@ npm run dev
 
 ---
 
-## 📸 Screenshots
+**Developed by Lalit Kumar Yadav (DTU '26)**
 
-### **Original vs. Rebuild Comparison**
-
-Original Site Audit 
-<img width="1523" height="775" alt="Screenshot 2026-05-12 143800" src="https://github.com/user-attachments/assets/1ca2003e-3c7f-43e2-b844-17d7f0b8d90b" />
-
-My Rebuild Audit 
- <img width="1536" height="773" alt="image" src="https://github.com/user-attachments/assets/6503a195-2ef0-4df7-88d8-cd69e6d4748c" />
-
+---
